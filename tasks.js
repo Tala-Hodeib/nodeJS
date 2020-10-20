@@ -39,7 +39,9 @@ function onDataReceived(text) {
   }
   else if(text === 'hello\n'){
     hello();
-  }
+  
+  }else if(text === 'help\n'){
+    help();}
   else{
     unknownCommand(text);
   }
@@ -81,3 +83,7 @@ function quit(){
 
 // The following line starts the application
 startApp("Tala Hodeib")
+
+function help(){
+console.log("quit--exit the application \n  exit--exit the application \n  hello--starts the application \n help--lists all commands")
+}
